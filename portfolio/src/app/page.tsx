@@ -1,6 +1,7 @@
+import Header from "@/app/home/header"
 
 export default function Home() {
   return <>
-    <div>Hello there</div>
+    <Header />
     </>
 }

@@ -1,5 +1,9 @@
+import AboutContent from "@/app/about/about";
+
 export default function About() {
 	return <>
-	<div>About page coming soon...</div>
+	<div>
+		<AboutContent />
+	</div>
 	</>
 }

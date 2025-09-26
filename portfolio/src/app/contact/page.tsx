@@ -1,5 +1,9 @@
+import ContactContent from "./contact"
+
 export default function Contact() {
 	return <>
-	<div>Contact info coming soon...</div>
+	<div>
+		<ContactContent />
+	</div>
 	</>
 }

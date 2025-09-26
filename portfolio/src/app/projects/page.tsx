@@ -1,5 +1,9 @@
+import ProjectsContent from "./projects";
+
 export default function Projects() {
 	return <>
-	<div>Projects coming soon...</div>
+	<div>
+		<ProjectsContent />
+	</div>
 	</>
 }
