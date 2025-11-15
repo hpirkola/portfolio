@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
@@ -123,9 +124,11 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
                 >
                 {project.imageUrl && (
                   <div className="mb-3 overflow-hidden rounded-xl">
-                    <img
+                    <Image
                       src={project.imageUrl}
                       alt={project.title}
+                      width={100}
+                      height={40}
                       className="h-40 w-full object-cover transition duration-500 group-hover:scale-105"
                     />
                   </div>

@@ -12,7 +12,9 @@ export function TransitionLink({ href, className, replace, children }: Transitio
 	const { animateOut } = usePageTransition();
 
 	const onClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
-		if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+		if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) {
+			return;
+		}
 		e.preventDefault();
 		await animateOut();
 		replace ? router.replace(href) : router.push(href);

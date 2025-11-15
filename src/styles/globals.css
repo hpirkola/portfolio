@@ -1,20 +1,5 @@
 @import "tailwindcss";
 
-/*background code here*/
-
-/* Base "no-flash" state for page transitions */
-
-/* app/globals.css */
-.route-fade {
-  opacity: 0;
-  will-change: opacity;
-}
-
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .route-fade { opacity: 1 !important; }
-}
-
 .gradient-anim {
 	animation: gradient 10s ease infinite;
 	background: linear-gradient(-45deg, #7DC4E4, #c6a0f6, #8bd5ca, #f5a97f);

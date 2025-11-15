@@ -5,8 +5,8 @@ import Image from "next/image";
 type Mode = "about" | "skills";
 
 export default function AboutContent() {
-	const [mode, setMode] = useState("about");
-	const handleModeChange = (newMode) => {
+	const [mode, setMode] = useState<Mode>("about");
+	const handleModeChange = (newMode: Mode) => {
 		setMode(newMode);
 	};
 	return <>
@@ -20,9 +20,9 @@ export default function AboutContent() {
 			<div className="min-h-[14rem]">
 				{mode === "about" && (
 				<>
-					<p className="mb-3">Hi, my name is Helmi Pirkola and I'm a programmer based in Helsinki, Finland. I’m currently studying at Hive Helsinki, where my focus is on C and C++ programming. Outside of my studies, I explore other languages and frameworks through personal projects (like this portfolio).</p>
+					<p className="mb-3">Hi, my name is Helmi Pirkola and I&apos;m a programmer based in Helsinki, Finland. I&apos;m currently studying at Hive Helsinki, where my focus is on C and C++ programming. Outside of my studies, I explore other languages and frameworks through personal projects (like this portfolio).</p>
 					<p className="mb-3">Before transitioning into tech, I built a career as a circus artist and teacher. That creative and playful side of me will follow me where ever I go next.</p>
-					<p className="mb-3">I love problem-solving, figuring out how things work, and building projects from the ground up. I’m always curious, always learning, and excited to grow with new technologies. I’m currently looking for my first job on this new career path.</p>
+					<p className="mb-3">I love problem-solving, figuring out how things work, and building projects from the ground up. I&apos;m always curious, always learning, and excited to grow with new technologies. I&apos;m currently looking for my first job on this new career path.</p>
 					<p>Thanks for stopping by! &lt;3</p>
 				</>
 				)}
@@ -39,7 +39,7 @@ export default function AboutContent() {
 						<h2 className="font-bold mt-3">Version Control & Platforms</h2>
 						<p className="font-light">GitHub</p>
 						<h2 className="font-bold mt-3">Other</h2>
-						<p className="font-light"> Juggling, making world's greatest avocado pasta</p>
+						<p className="font-light"> Juggling, making world&apos;s greatest avocado pasta</p>
 					</div>
 				)}
 			</div>
@@ -54,8 +54,3 @@ export default function AboutContent() {
 	</div>
 	</>
 }
-
-/*About me / Skills
-	list languages and frameworks in skills
-
-*/
