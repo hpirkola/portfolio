@@ -14,7 +14,7 @@ This is my work-in-progress personal portfolio.
 Improving layouts across tablet and mobile
 Adjusting animations for smaller viewports
 
-**2.Cleaned & Organized Styles**
+**2. Cleaned & Organized Styles**
 
 Moving repeated Tailwind classes into dedicated CSS/Tailwind component files
 Reducing inline complexity for improved manageability
