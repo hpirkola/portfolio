@@ -1,11 +1,11 @@
 # My Web Portfolio
 This is my work-in-progress personal portfolio.
 ## Tech Stack
-* Next.js — App routing, server-side rendering
-* React — Component-based UI
-* TypeScript — Static typing for reliability and maintainability
-* Tailwind CSS — Utility-first styling
-* GSAP — High-performance animations and micro-interactions
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* GSAP
 
 ## Planned Improvements
 
